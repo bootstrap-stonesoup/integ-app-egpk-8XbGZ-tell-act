@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-menm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/nbe-e2e-fhak-tenant/integ-app-egpk/devfile-sample-python-basic-menm@sha256:8ece33f8a2c00b554ee04c450c805ed5af103fa1954819be0be26ab6b8feb8a8
+        name: my-python
+        resources: {}
+status: {}
